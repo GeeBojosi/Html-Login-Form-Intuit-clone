@@ -7,81 +7,87 @@
     <title>Intuit Accounts - Sign Up</title>
 </head>
 <body>
-    <div class="top-contents">
-        <div class="account">
-            <p>Already have an Inituit accout?</p>
-            <p>
-                <a href="#">I forgot my User ID or Password</a>
-            </p>        
-        </div>
+    <header>
         <button class="button"><i class="fa fa-lock"></i> Sign In</button>
-    </div>
-    
-    <!-- <div class="container">
-        <header>
-            <a href="#"><img src="img/Logo.jpg" alt="Inituit-Logo" style="width: 200px; height: 100px;"></a>
-            <ul>
-                <li>
-                    <a href="#">
-                        <span>mint</span>
-                        <img src="img/Mint.jpg" alt="Mint"  style="width: 100px;">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>quickbooks</span>
-                        <img src="img/quickbooks.jpg" alt="Quickbooks" style="width: 100px;">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>turbotax</span>
-                        <img src="img/turbotax.jpg" alt="turbotax" style="width: 100px;">
-                    </a>
-                </li>
-            </ul>
-        </header>
-    </div> -->
 
-    <div class="container">
-        <div class="inner-contents">
-            <h1>Create an Intuit Account</h1>
-            <div class="subhead">
-                <p>One account for everything Intuit, including Mint.</p>
-                <a href="#" id="Learn">Learn more</a>
-            </div>
-            
-            <form class="form">
-                <div>
-                    <label for="Email">Email</label><br>
-                    <input type="email" name="Email" placeholder="enter email...">
-                </div>
-                <div>
-                    <label>Phone (recommended)</label><br>
-                    <input type="tel" name="Phone" placeholder="+123">
-                </div>
-                <div>
-                    <label for="password">Password</label><br>
-                    <input type="password">
-                </div>
-                <div>
-                    <label for="">Confirm password</label><br>
-                    <input type="password">
-                </div>
-                <br>
-                <button><i class="fa fa-lock">Create Account</i></button>    
-            </form>
-            
-            <p>By clicking Create account, you agree to our
-                <a href="#">Terms</a> and have read and acknowledge our <a href="#">Privacy Statement.</a>
-            </p>
+        <div class="account" id="top-contents">
+            <p>Already have an Inituit accout?</p>
+            <a href="#">I forgot my User ID or Password</a>     
+        </div>
+        <div class="clear"></div>
+    </header>
     
-            <div class="form-footer">
-                <p>Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Use.</a></p>
-            </div>
+    <section>
+
+        <div class="logo">
+            <a href="">
+                <img src="img/logo-intuit.png" id="logo" alt="Logo">
+            </a>
         </div>
         
-    </div> 
+        
+        <ul id="content-links">
+            <li>
+                <a href="#">
+                    <span><img src="img/mint-icon.svg" alt="Mint"></span>
+                    <span>mint</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span><img src="img/quickbooks-icon.svg" alt="Quickbooks"></span>
+                    <span>quickbooks</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span><img src="img/turbotax-icon.svg" alt="turbotax"></span>
+                    <span>turbotax</span>               
+                </a>
+            </li>            
+        </ul>
+
+        <form>
+            <fieldset>
+                <p id="form-header">Create an Intuit account</p>
+                <p id="subhead">One account for everything Intuit, including Mint</p>
+                <a href="#">Learn more</a>
+                <br>
+                <label class="labels">Email address</label>
+                <input type="text" placeholder="e.g: @email.com">
+                <br>
+                <label class="labels">Phone (Recommended)</label>
+                <input type="telephone" placeholder="+123">
+                <br>
+                <label class="labels">Password</label>
+                <input type="password" class="fa fa-unlock">
+                <br>
+                <button type="submit"><i class="fa fa-lock"></i> Create Account</button>
+                <br>
+                <div class="License-Agree">
+                    <small class="License-Agree-inner">
+                        By clicking Create Account, you agree to our <a href="#">Terms</a>
+                        and have read and acknowledge our <a href="#">Privacy Statement</a>
+                    </small>
+                </div>
+            </fieldset>
+            <div class="form-footer">
+                <small>
+                    Invisible reCAPTCHA by google <a href="#">Privacy Policy</a>
+                    and <a href="#">Terms of Use</a>
+                </small>
+            </div>
+        </form>
+
+        <footer class="footer">
+            <ul class="footer-ul">
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Security</a></li>
+            </ul>
+        </footer>
+    </section>
+         
         
     <script src="https://kit.fontawesome.com/2fcb29ebe6.js" crossorigin="anonymous"></script>
 </body>
